@@ -47,6 +47,7 @@ INSTALLED_APPS = (
     'operation',
     'xadmin',
     'crispy_forms',
+    'captcha',
 
 )
 # 　重载
@@ -119,3 +120,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+
+#　自动验证
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+)
