@@ -125,3 +125,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
 AUTHENTICATION_BACKENDS = (
     'users.views.CustomBackend',
 )
+# fasong 邮件
+
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'chenbo_wl0328@163.com'
+EMAIL_HOST_PASSWORD = 'xyb19680727'
+EMAIL_FROM = 'chenbo_wl0328@163.com'
+EMAIL_USE_TILS = False
