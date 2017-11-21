@@ -48,6 +48,7 @@ INSTALLED_APPS = (
     'xadmin',
     'crispy_forms',
     'captcha',
+    'pure_pagination',
 
 )
 # 　重载
@@ -133,3 +134,12 @@ EMAIL_HOST_USER = 'chenbo_wl0328@163.com'
 EMAIL_HOST_PASSWORD = 'xyb19680727'
 EMAIL_FROM = 'chenbo_wl0328@163.com'
 EMAIL_USE_TILS = False
+
+
+# 翻页
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 10,
+    'MARGIN_PAGES_DISPLAYED': 2,
+
+    'SHOW_FIRST_PAGE_WHEN_INVALID': True,
+}
